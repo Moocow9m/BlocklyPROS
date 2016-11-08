@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Tester</title>
-  <script src="files/blockly_compressed.js"></script>
+  <script src="files/blockly_uncompressed.js"></script>
+  <script src="files/generators/PROS.js"></script>
   <script src="files/PROS_compressed.js"></script>
   <script src="files/blocks_compressed.js"></script>
   <script src="files/msg/js/en.js"></script>
@@ -26,8 +27,12 @@
   
   <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
 
-  <xml id="toolbox" style="display: none">
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
   <category name="PROS" colour="#a6635c">
+    <block type="main_h"></block>
+    <block type="initcode"></block>
+    <block type="autonomous"></block>
+    <block type="opcontrol"></block>
     <block type="setmotorspeed">
       <field name="Port">0</field>
       <field name="Speed">0</field>
@@ -85,21 +90,16 @@
     </block>
   </category>
   <category name="Math" colour="#5e5ca6">
+    <block type="math_round">
+      <field name="OP">ROUND</field>
+      <value name="NUM">
+        <shadow type="math_number">
+          <field name="NUM">3.1</field>
+        </shadow>
+      </value>
+    </block>
     <block type="math_number">
       <field name="NUM">0</field>
-    </block>
-    <block type="math_arithmetic">
-      <field name="OP">ADD</field>
-      <value name="A">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
-      <value name="B">
-        <shadow type="math_number">
-          <field name="NUM">1</field>
-        </shadow>
-      </value>
     </block>
     <block type="math_single">
       <field name="OP">ROOT</field>
@@ -129,11 +129,16 @@
         </shadow>
       </value>
     </block>
-    <block type="math_round">
-      <field name="OP">ROUND</field>
-      <value name="NUM">
+    <block type="math_arithmetic">
+      <field name="OP">ADD</field>
+      <value name="A">
         <shadow type="math_number">
-          <field name="NUM">3.1</field>
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <value name="B">
+        <shadow type="math_number">
+          <field name="NUM">1</field>
         </shadow>
       </value>
     </block>
@@ -185,11 +190,17 @@
     <block type="math_random_float"></block>
   </category>
   <category name="Text" colour="#5ca677">
+    <block type="text_charAt">
+      <mutation at="true"></mutation>
+      <field name="WHERE">FROM_START</field>
+      <value name="VALUE">
+        <block type="variables_get">
+          <field name="VAR">text</field>
+        </block>
+      </value>
+    </block>
     <block type="text">
       <field name="TEXT"></field>
-    </block>
-    <block type="text_join">
-      <mutation items="2"></mutation>
     </block>
     <block type="text_append">
       <field name="VAR">item</field>
@@ -226,14 +237,8 @@
         </shadow>
       </value>
     </block>
-    <block type="text_charAt">
-      <mutation at="true"></mutation>
-      <field name="WHERE">FROM_START</field>
-      <value name="VALUE">
-        <block type="variables_get">
-          <field name="VAR">text</field>
-        </block>
-      </value>
+    <block type="text_join">
+      <mutation items="2"></mutation>
     </block>
     <block type="text_getSubstring">
       <mutation at1="true" at2="true"></mutation>
@@ -279,11 +284,16 @@
     </block>
   </category>
   <category name="Lists" colour="#745ca6">
-    <block type="lists_create_with">
-      <mutation items="0"></mutation>
+    <block type="lists_indexOf">
+      <field name="END">FIRST</field>
+      <value name="VALUE">
+        <block type="variables_get">
+          <field name="VAR">list</field>
+        </block>
+      </value>
     </block>
     <block type="lists_create_with">
-      <mutation items="3"></mutation>
+      <mutation items="0"></mutation>
     </block>
     <block type="lists_repeat">
       <value name="NUM">
@@ -294,13 +304,8 @@
     </block>
     <block type="lists_length"></block>
     <block type="lists_isEmpty"></block>
-    <block type="lists_indexOf">
-      <field name="END">FIRST</field>
-      <value name="VALUE">
-        <block type="variables_get">
-          <field name="VAR">list</field>
-        </block>
-      </value>
+    <block type="lists_create_with">
+      <mutation items="3"></mutation>
     </block>
     <block type="lists_getIndex">
       <mutation statement="false" at="true"></mutation>
@@ -347,12 +352,21 @@
     </block>
   </category>
   <category name="Variables" colour="#A65C81" custom="VARIABLE"></category>
-  </xml>
+</xml>
+
+<xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+  <block type="main_h" id="!ImbJmdQ1PK{_qHbF]_I" x="-12" y="13"></block>
+  <block type="initcode" id="S|w!62wKylAYB-*`nC1)" x="-12" y="88"></block>
+  <block type="autonomous" id="m[R|16dRVepxgu9*EJO2" x="-12" y="213"></block>
+  <block type="opcontrol" id="|$xzIMK]%s2`W!A-4w?!" x="-12" y="288"></block>
+</xml>
 
   <script>
     var workspace = Blockly.inject('blocklyDiv',
         {media: 'files/media/',
          toolbox: document.getElementById('toolbox')});
+		     Blockly.Xml.domToWorkspace(document.getElementById('workspaceBlocks'),
+                               workspace);
     function exportCode() {
       // Generate PROS code here.
       var code = Blockly.PROS.workspaceToCode(workspace);

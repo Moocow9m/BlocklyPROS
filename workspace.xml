@@ -1,1 +1,6 @@
-<xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+  <block type="main_h" id="!ImbJmdQ1PK{_qHbF]_I" x="-12" y="13"></block>
+  <block type="initcode" id="S|w!62wKylAYB-*`nC1)" x="-12" y="88"></block>
+  <block type="autonomous" id="m[R|16dRVepxgu9*EJO2" x="-12" y="213"></block>
+  <block type="opcontrol" id="|$xzIMK]%s2`W!A-4w?!" x="-12" y="288"></block>
+</xml>
