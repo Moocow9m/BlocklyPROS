@@ -19,10 +19,7 @@
   </style>
 </head>
 <body>
-  <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
-
   <p>Testing Page of PROS blocky</p>
-
     <p>
     <button onclick="exportCode()">Download PROS code</button>
   </p>
