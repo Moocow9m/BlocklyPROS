@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Tester</title>
-  <script src="files/blockly_uncompressed.js"></script>
+  <script src="files/blockly_compressed.js"></script>
   <script src="files/generators/PROS.js"></script>
   <script src="files/PROS_compressed.js"></script>
   <script src="files/blocks_compressed.js"></script>
