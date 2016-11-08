@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="K[X$37Muk3,_-I1jI~0P" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">SetMotorSpeed</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="D.9L!yI]bl+teuvGlq}l">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="[((EPdRKG5|:DUl}uihw">
+            <field name="TEXT">Set Motor Speed:</field>
+            <next>
+              <block type="field_static" id="xyna}nrLA92UmYaY~vVt">
+                <field name="TEXT">Port:</field>
+                <next>
+                  <block type="field_number" id="AuM[@y6bm[IX_tK6mfc." inline="true">
+                    <field name="VALUE">0</field>
+                    <field name="FIELDNAME">Port</field>
+                    <field name="MIN">-127</field>
+                    <field name="MAX">127</field>
+                    <field name="PRECISION">0</field>
+                    <next>
+                      <block type="field_static" id="bjh!xsqOBok1.Jd!r_up">
+                        <field name="TEXT">Speed:</field>
+                        <next>
+                          <block type="field_number" id="vrB9.m0j,rwF5BoEP6fO" inline="true">
+                            <field name="VALUE">0</field>
+                            <field name="FIELDNAME">Speed</field>
+                            <field name="MIN">-127</field>
+                            <field name="MAX">127</field>
+                            <field name="PRECISION">0</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id=".O_Lbbvmhzm3{(:Be~5t"></shadow>
+      <block type="type_null" id="AyDnqm4c?`,=nDCy%(Tr"></block>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="uJhV3y?-9n@KKy[Bli2q"></shadow>
+      <block type="type_null" id="(D(N_qMDA!/Gkv49!~$d"></block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="AQF=FEI/8PIO@7(-kZg%">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block></xml>
