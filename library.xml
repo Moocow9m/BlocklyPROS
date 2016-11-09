@@ -55,4 +55,148 @@
         <field name="HUE">230</field>
       </block>
     </value>
+  </block><block type="factory_base" id="c(Y8e|k,wYJIv/a+//5H" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">initcode</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="$xtmP$*4q}W?M/l$)~MP">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="HdxHw4ppIHT4gNoE{g`|">
+            <field name="TEXT">InitIO</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="2Dc:{Uug3A2pfZdLrDy$">
+            <field name="INPUTNAME">InitIOVars</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="/ZA/_ygD|%cQyP`~UVj)"></shadow>
+              <block type="type_null" id="Wq[Ty4:}XgyyNqm4R9Bn"></block>
+            </value>
+            <next>
+              <block type="input_dummy" id="zIz)QsqpPBFn3Z!}#VjZ">
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="QzlsB^^~DN=lf9RXq%(.">
+                    <field name="TEXT">Init</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="input_statement" id="M^9%gyP:{oDx|/{XO}[T">
+                    <field name="INPUTNAME">InitVars</field>
+                    <field name="ALIGN">LEFT</field>
+                    <value name="TYPE">
+                      <shadow type="type_null" id="3T9sAeu@`FQ?B/-EPsNl"></shadow>
+                      <block type="type_null" id="sW3e;%BoCYdHVoD]^c^R"></block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Rjjdn(rxcA_=Sc+tQv{8">
+        <mutation colour="#805ba5"></mutation>
+        <field name="HUE">270</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="3[V!povv}De}#l.f?31!" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">main_h</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="%f;zKpg1jG81}`,!TAM;">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="E$aq$Q-9R7l]]0Q+]qjQ">
+            <field name="TEXT">Global variable initialization</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="lPC6uQEo3XJD{/QxZtXo">
+            <field name="INPUTNAME">MainVars</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id=",Ed5~0gb`z%W!Gdx^.JA"></shadow>
+              <block type="type_null" id="][$g-qNtKcR}6UB=HVN/"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="COLOUR">
+      <block type="colour_hue" id="B0zdVAA!swq;P+R(83~=">
+        <mutation colour="#9fa55b"></mutation>
+        <field name="HUE">65</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="9SQ|jq=K2:!EQLYVzWlv" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">autonomous</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="vX:a1o;QKsIV~eh/oeU^">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="5w{]HLchKvkdU;#s:Z%|">
+            <field name="TEXT">Autonomous</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="TBW:N}KbZAtkhSsrM4DN">
+            <field name="INPUTNAME">AutonVars</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="*0d5-YJBg(56ON}%PRhb"></shadow>
+              <block type="type_null" id="!:UbvDuL@7KT18=:4;g,"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="COLOUR">
+      <block type="colour_hue" id="ZPppT!.6q7nG=G9Sg}0N">
+        <mutation colour="#5ba58c"></mutation>
+        <field name="HUE">160</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=n[$N)Igsi)duB/`*+[O" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">opcontrol</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="YCh|#mxCu8H$rByLZ7%F">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="w[NHUfX7c{]][-Un8k4S">
+            <field name="TEXT">Operator Control</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="q=(6E[$_S.N.iw@iSz*J">
+            <field name="INPUTNAME">NAME</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id=")|Xx}SmAsyI3-Lx*cfi$"></shadow>
+              <block type="type_null" id="B:1CDJv5iZm#Tt$~*%Ur"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="COLOUR">
+      <block type="colour_hue" id="YIYGLnnmsSrvIGkYnHMM">
+        <mutation colour="#745ba5"></mutation>
+        <field name="HUE">260</field>
+      </block>
+    </value>
   </block></xml>
