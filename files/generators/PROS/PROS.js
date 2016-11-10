@@ -13,27 +13,27 @@ Blockly.PROS['setmotorspeed'] = function(block) {
 Blockly.PROS['initcode'] = function(block) {
   var statements_initvars = Blockly.PROS.statementToCode(block, 'InitVars');
   var statements_initiovars = Blockly.PROS.statementToCode(block, 'InitIOVars');
-  var code = '//replace contents of init.c with this\n#include \"main.h\"\n\nvoid initializeIO() {\n' + statements_initiovars + '}\n\nvoid initialize() {\n' + statements_initvars + '}';
+  var code = '//replace contents of init.c with this\n#include \"main.h\"\n\nvoid initializeIO() {\n' + statements_initiovars + '}\n\nvoid initialize() {\n' + statements_initvars + '}\n';
   return code;
 };
 
 Blockly.PROS['main_h'] = function(block) {
   var statements_mainvars = Blockly.PROS.statementToCode(block, 'MainVars');
   // TODO: Assemble PROS into code variable.
-  var code = '...;\n';
+  var code = '//add to Main.h after #ifdef __cplusplus \n //extern "C" {\n//#endif\n\n\n' + statements_mainvars + '\n';
   return code;
 };
 
 Blockly.PROS['autonomous'] = function(block) {
   var statements_autonvars = Blockly.PROS.statementToCode(block, 'AutonVars');
   // TODO: Assemble PROS into code variable.
-  var code = '...;\n';
+  var code = '//replace contents of auto.c with this\n#include \"main.h\"\n\nvoid autonomous() {\n' + statements_autonvars + '}\n';
   return code;
 };
 
 Blockly.PROS['opcontrol'] = function(block) {
   var statements_name = Blockly.PROS.statementToCode(block, 'NAME');
   // TODO: Assemble PROS into code variable.
-  var code = '...;\n';
+  var code = '//replace contents of opcontrol.c with this\n#include \"main.h\"\n\nvoid autonomous() {\n' + statements_name + 'delay(20);\n}\n';
   return code;
 };
