@@ -34,6 +34,14 @@ Blockly.PROS['autonomous'] = function(block) {
 Blockly.PROS['opcontrol'] = function(block) {
   var statements_name = Blockly.PROS.statementToCode(block, 'NAME');
   // TODO: Assemble PROS into code variable.
-  var code = '//replace contents of opcontrol.c with this\n#include \"main.h\"\n\nvoid operatorControl() {\n' + statements_name + 'delay(20);\n}\n';
+  var code = '//replace contents of opcontrol.c with this\n#include \"main.h\"\n\nvoid operatorControl() {\n' + statements_name + '\n}\n';
+  return code;
+};
+
+Blockly.PROS['while_loop'] = function(block) {
+  var value_statement = Blockly.PROS.valueToCode(block, 'Statement', Blockly.PROS.ORDER_ATOMIC);
+  var statements_loopvars = Blockly.PROS.statementToCode(block, 'loopVars');
+  // TODO: Assemble PROS into code variable.
+  var code = 'while (' + value_statement + ') { \n' + statements_loopvars + 'delay(20);\n}\n';
   return code;
 };
