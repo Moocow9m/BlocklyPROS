@@ -43,11 +43,35 @@
     </statement>
     <value name="TOPTYPE">
       <shadow type="type_null" id=".O_Lbbvmhzm3{(:Be~5t"></shadow>
-      <block type="type_null" id="AyDnqm4c?`,=nDCy%(Tr"></block>
+      <block type="type_group" id="roz[dzIYy,$50F90K}Pq">
+        <mutation types="2"></mutation>
+        <value name="TYPE0">
+          <block type="type_other" id=";+D]V:MO_Jd{LQuoTKr,">
+            <field name="TYPE">Auto</field>
+          </block>
+        </value>
+        <value name="TYPE1">
+          <block type="type_other" id="qr35(|F6UAK;9-l-dUc/">
+            <field name="TYPE">Driver</field>
+          </block>
+        </value>
+      </block>
     </value>
     <value name="BOTTOMTYPE">
       <shadow type="type_null" id="uJhV3y?-9n@KKy[Bli2q"></shadow>
-      <block type="type_null" id="(D(N_qMDA!/Gkv49!~$d"></block>
+      <block type="type_group" id="m@+f[;z1.}1)L03pD?^L">
+        <mutation types="2"></mutation>
+        <value name="TYPE0">
+          <block type="type_other" id="_XZ7r#q)EL=[8f{_}pBu">
+            <field name="TYPE">Auto</field>
+          </block>
+        </value>
+        <value name="TYPE1">
+          <block type="type_other" id="qHRD,:fm@n8t7;+1eJ8C">
+            <field name="TYPE">Driver</field>
+          </block>
+        </value>
+      </block>
     </value>
     <value name="COLOUR">
       <block type="colour_hue" id="AQF=FEI/8PIO@7(-kZg%">
@@ -74,7 +98,9 @@
             <field name="ALIGN">LEFT</field>
             <value name="TYPE">
               <shadow type="type_null" id="/ZA/_ygD|%cQyP`~UVj)"></shadow>
-              <block type="type_null" id="Wq[Ty4:}XgyyNqm4R9Bn"></block>
+              <block type="type_other" id="OP|A]fXxjuvj0CtTT3h/">
+                <field name="TYPE">InitIO</field>
+              </block>
             </value>
             <next>
               <block type="input_dummy" id="zIz)QsqpPBFn3Z!}#VjZ">
@@ -90,7 +116,9 @@
                     <field name="ALIGN">LEFT</field>
                     <value name="TYPE">
                       <shadow type="type_null" id="3T9sAeu@`FQ?B/-EPsNl"></shadow>
-                      <block type="type_null" id="sW3e;%BoCYdHVoD]^c^R"></block>
+                      <block type="type_other" id="q92A4IdDYc]M}.0zi`I_">
+                        <field name="TYPE">Init</field>
+                      </block>
                     </value>
                   </block>
                 </next>
@@ -125,7 +153,9 @@
             <field name="ALIGN">LEFT</field>
             <value name="TYPE">
               <shadow type="type_null" id=",Ed5~0gb`z%W!Gdx^.JA"></shadow>
-              <block type="type_null" id="][$g-qNtKcR}6UB=HVN/"></block>
+              <block type="type_other" id="[ks)QL[E;3S}ggtTvZi|">
+                <field name="TYPE">Main</field>
+              </block>
             </value>
           </block>
         </next>
@@ -156,7 +186,9 @@
             <field name="ALIGN">LEFT</field>
             <value name="TYPE">
               <shadow type="type_null" id="*0d5-YJBg(56ON}%PRhb"></shadow>
-              <block type="type_null" id="!:UbvDuL@7KT18=:4;g,"></block>
+              <block type="type_other" id="t9*Sh:}2:O.R4,r,tROu">
+                <field name="TYPE">Auto</field>
+              </block>
             </value>
           </block>
         </next>
@@ -187,7 +219,9 @@
             <field name="ALIGN">LEFT</field>
             <value name="TYPE">
               <shadow type="type_null" id=")|Xx}SmAsyI3-Lx*cfi$"></shadow>
-              <block type="type_null" id="B:1CDJv5iZm#Tt$~*%Ur"></block>
+              <block type="type_other" id="Rc,|r,~@RA0+KqFZSu,V">
+                <field name="TYPE">Driver</field>
+              </block>
             </value>
           </block>
         </next>
