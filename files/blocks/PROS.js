@@ -138,6 +138,8 @@ Blockly.Blocks['while_loop'] = {
       "name": "loopVars"
     }
   ],
+  "previousStatement": null,
+  "nextStatement": null,
   "colour": 120,
   "tooltip": "",
   "helpUrl": "http://www.example.com/"
