@@ -121,3 +121,26 @@ Blockly.Blocks['opcontrol'] = {
   });
   }
 };
+
+Blockly.Blocks['while_loop'] = {
+  init: function() {
+	  this.jsonInit({
+		  "type": "while_loop",
+  "message0": "While %1 %2",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "Statement",
+      "check": "Boolean"
+    },
+    {
+      "type": "input_statement",
+      "name": "loopVars"
+    }
+  ],
+  "colour": 120,
+  "tooltip": "",
+  "helpUrl": "http://www.example.com/"
+	  });
+  }
+};
