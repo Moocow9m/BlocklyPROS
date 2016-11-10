@@ -33,11 +33,15 @@
     <block type="initcode"></block>
     <block type="autonomous"></block>
     <block type="opcontrol"></block>
-    <block type="setmotorspeed">
-      <field name="Port">0</field>
-      <field name="Speed">0</field>
-    </block>
   </category>
+  <category name="PROS_InitIO" colour="#a65c5e"></category>
+  <category name="PROS_Init" colour="#a65c77"></category>
+  <category name="PROS_Op" colour="#a65c5e"></category>
+  <category name="PROS_Auto&amp;Op" colour="#a65c66">
+    <block type="opcontrol"></block>
+    <block type="while_loop"></block>
+  </category>
+  <sep></sep>
   <category name="Logic" colour="#5c7ca6">
     <block type="controls_if"></block>
     <block type="logic_compare">
