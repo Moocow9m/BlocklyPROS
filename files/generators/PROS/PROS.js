@@ -42,6 +42,6 @@ Blockly.PROS['while_loop'] = function(block) {
   var value_statement = Blockly.PROS.valueToCode(block, 'Statement', Blockly.PROS.ORDER_ATOMIC);
   var statements_loopvars = Blockly.PROS.statementToCode(block, 'loopVars');
   // TODO: Assemble PROS into code variable.
-  var code = 'while (' + value_statement + ') { \n' + statements_loopvars + 'delay(20);\n}\n';
+  var code = 'while (' + value_statement + ') { \n' + statements_loopvars + '	delay(20);\n}\n';
   return code;
 };
