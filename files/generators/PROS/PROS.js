@@ -34,6 +34,6 @@ Blockly.PROS['autonomous'] = function(block) {
 Blockly.PROS['opcontrol'] = function(block) {
   var statements_name = Blockly.PROS.statementToCode(block, 'NAME');
   // TODO: Assemble PROS into code variable.
-  var code = '//replace contents of opcontrol.c with this\n#include \"main.h\"\n\nvoid autonomous() {\n' + statements_name + 'delay(20);\n}\n';
+  var code = '//replace contents of opcontrol.c with this\n#include \"main.h\"\n\nvoid operatorControl() {\n' + statements_name + 'delay(20);\n}\n';
   return code;
 };
