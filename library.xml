@@ -199,4 +199,40 @@
         <field name="HUE">260</field>
       </block>
     </value>
+  </block><block type="factory_base" id="EJ7Jj*@`2?nN^CW[W$bs" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">while_loop</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="%1F#;oL~d6#AjoTEzOzw">
+        <field name="INPUTNAME">Statement</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="%[xqihvEWd[wsF6Nwae:">
+            <field name="TEXT">While</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="m4,)]^+0s];W9v}b#NJ@"></shadow>
+          <block type="type_boolean" id="rW$,As4l5g8=l`_Q[^Uu"></block>
+        </value>
+        <next>
+          <block type="input_statement" id="z)qr3yK8ye%33BCc-b+I">
+            <field name="INPUTNAME">loopVars</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="FIapvPJgqnt;)98qtw*1"></shadow>
+              <block type="type_null" id="gT{Zh3$f51krJD_$(M?d"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="COLOUR">
+      <block type="colour_hue" id="E=leQ*Mi8R4a?cLm5cA[">
+        <mutation colour="#5ba55b"></mutation>
+        <field name="HUE">120</field>
+      </block>
+    </value>
   </block></xml>
