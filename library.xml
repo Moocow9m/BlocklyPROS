@@ -234,10 +234,10 @@
       </block>
     </value>
   </block><block type="factory_base" id="EJ7Jj*@`2?nN^CW[W$bs" deletable="false" movable="false" x="0" y="0">
-    <mutation connections="NONE"></mutation>
+    <mutation connections="BOTH"></mutation>
     <field name="NAME">while_loop</field>
     <field name="INLINE">AUTO</field>
-    <field name="CONNECTIONS">NONE</field>
+    <field name="CONNECTIONS">BOTH</field>
     <statement name="INPUTS">
       <block type="input_value" id="%1F#;oL~d6#AjoTEzOzw">
         <field name="INPUTNAME">Statement</field>
@@ -263,6 +263,12 @@
         </next>
       </block>
     </statement>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="$]!Q$6~bIHM4-O27_07*"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="wo#Ch:O?!33%7Ya^9F7n"></shadow>
+    </value>
     <value name="COLOUR">
       <block type="colour_hue" id="E=leQ*Mi8R4a?cLm5cA[">
         <mutation colour="#5ba55b"></mutation>
