@@ -8,9 +8,9 @@ Blockly.Blocks['setmotorspeed'] = {
     {
       "type": "field_number",
       "name": "Port",
-      "value": 1,
-      "min": 1,
-      "max": 10
+      "value": 0,
+      "min": -127,
+      "max": 127
     },
     {
       "type": "field_number",
@@ -20,8 +20,14 @@ Blockly.Blocks['setmotorspeed'] = {
       "max": 127
     }
   ],
-  "previousStatement": null,
-  "nextStatement": null,
+  "previousStatement": [
+    "Auto",
+    "Driver"
+  ],
+  "nextStatement": [
+    "Auto",
+    "Driver"
+  ],
   "colour": 230,
   "tooltip": "",
   "helpUrl": "http://www.example.com/"
@@ -34,22 +40,23 @@ Blockly.Blocks['initcode'] = {
   init: function() {
 	  this.jsonInit({
 		  "type": "initcode",
-		  "message0": "InitIO %1 %2 Init %3 %4",
-		  "args0": [
+  "message0": "InitIO %1 %2 Init %3 %4",
+  "args0": [
     {
       "type": "input_dummy"
     },
     {
       "type": "input_statement",
       "name": "InitIOVars",
-      "check": "setmotorspeed"
+      "check": "InitIO"
     },
     {
       "type": "input_dummy"
     },
     {
       "type": "input_statement",
-      "name": "InitVars"
+      "name": "InitVars",
+      "check": "Init"
     }
   ],
   "colour": 270,
@@ -70,7 +77,8 @@ Blockly.Blocks['main_h'] = {
     },
     {
       "type": "input_statement",
-      "name": "MainVars"
+      "name": "MainVars",
+      "check": "Main"
     }
   ],
   "colour": 65,
@@ -83,7 +91,7 @@ Blockly.Blocks['main_h'] = {
 Blockly.Blocks['autonomous'] = {
   init: function() {
 	  this.jsonInit({
-		  "type": "autonomous",
+		 "type": "autonomous",
   "message0": "Autonomous %1 %2",
   "args0": [
     {
@@ -91,7 +99,8 @@ Blockly.Blocks['autonomous'] = {
     },
     {
       "type": "input_statement",
-      "name": "AutonVars"
+      "name": "AutonVars",
+      "check": "Auto"
     }
   ],
   "colour": 160,
@@ -104,7 +113,7 @@ Blockly.Blocks['autonomous'] = {
 Blockly.Blocks['opcontrol'] = {
   init: function() {
 	  this.jsonInit({
-		  "type": "opcontrol",
+		   "type": "opcontrol",
   "message0": "Operator Control %1 %2",
   "args0": [
     {
@@ -112,7 +121,8 @@ Blockly.Blocks['opcontrol'] = {
     },
     {
       "type": "input_statement",
-      "name": "NAME"
+      "name": "NAME",
+      "check": "Driver"
     }
   ],
   "colour": 260,
@@ -138,8 +148,6 @@ Blockly.Blocks['while_loop'] = {
       "name": "loopVars"
     }
   ],
-  "previousStatement": null,
-  "nextStatement": null,
   "colour": 120,
   "tooltip": "",
   "helpUrl": "http://www.example.com/"
