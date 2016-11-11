@@ -135,7 +135,7 @@ Blockly.Blocks['opcontrol'] = {
 Blockly.Blocks['while_loop'] = {
   init: function() {
 	  this.jsonInit({
-		  "type": "while_loop",
+		 "type": "while_loop",
   "message0": "While %1 %2",
   "args0": [
     {
@@ -148,6 +148,8 @@ Blockly.Blocks['while_loop'] = {
       "name": "loopVars"
     }
   ],
+  "previousStatement": null,
+  "nextStatement": null,
   "colour": 120,
   "tooltip": "",
   "helpUrl": "http://www.example.com/"
